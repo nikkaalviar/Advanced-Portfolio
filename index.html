@@ -60,8 +60,8 @@
           <h1 class="title">Hey</h1>
           <h1 class="title orange">I'm Nikka.</h1>
           <p class="header__para">
-            I'm a <b class="orange">Frontend Software Engineer</b> with a strong
-            passion for building web applications with great user experiences.
+            I'm a <b class="orange">Frontend Developer</b> with a strong passion
+            for building web applications with great user experiences.
             <br />
             Here's a bit more <b class="orange click"></b> about me.
           </p>
@@ -92,12 +92,170 @@
       </header>
       <a href="#">
         <button class="mail__btn click">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
+          <i class="fas fa-envelope" aria-hidden="true"></i>
         </button>
       </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me
+          </h3>
+          <h4 class="modal__subtitle modal__subtitle--about">
+            Frontend Developer
+          </h4>
+          <p class="modal__para">
+            I have a Bachelor's Degree in Information Technolgy and has
+            experience as a <b class="orange">Frontend Developer</b>
+          </p>
+          <br />
+          I enjoy solving difficult developer problems with
+          <b class="orange">React</b>, and
+          <b class="orange">TypeScript</b>
+        </div>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="CSS Logo Image"
+            />
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="JavaScript Logo Image"
+            />
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+              alt="TypeScript Logo Image"
+            />
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+              alt="TypeScript Logo Image"
+            />
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+              alt="TypeScript Logo Image"
+            />
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+              alt="TypeScript Logo Image"
+            />
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img
+              class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+              alt="TypeScript Logo Image"
+            />
+            <span class="language__name">TypeScript</span>
+          </figure>
+        </div>
+
+        <div class="modal__half modal__contact">
+          <i
+            class="fas fa-times modal__exit click"
+            onclick="toggleModal()"
+            aria-hidden="true"
+          ></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h3 class="modal__subtitle modal__subtitle--contact">
+            I'm currently open to new opportunities
+          </h3>
+          <form action="" id="contact__form">
+            <div class="form__item">
+              <label class="form__item" class="form__item--label">Name</label>
+              <input type="text" class="input" name="user_name" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="email" class="input" name="user_email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send it my way</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner" aria-hidden="true"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            "Thanks for the message! Looking forward to speaking with you soon."
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="shape shape--0"
+        src="./assets/semi circle.svg"
+        alt="Semi Circle Image"
+        style="transform: translate(36.5px, 26.7px) rotate(365deg)"
+      />
+      <img
+        src="./assets/circle.svg"
+        alt="Circle Image"
+        class="shape shape--1"
+        style="transform: translate(-41.65px, -27.25px) rotate(-415deg)"
+      />
+      <img
+        src="./assets/squiggly.svg"
+        class="shape shape--2"
+        style="transform: translate(41.65px, 27.25px) rotate(416.5deg)"
+      />
+      <img
+        src="./assets/circle.svg"
+        class="shape shape--3"
+        style="transform: translate(-41.65px, -27.25px) rotate(-416.5deg)"
+      />
+      <img
+        src="./assets/triangle.svg"
+        class="shape shape--4"
+        style="transform: translate(41.65px, 27.25px) rotate(416.5deg)"
+      />
+      <img
+        src="./assets/circle.svg"
+        class="shape shape--5"
+        style="transform: translate(-41.65px, -27.25px) rotate(-416.5deg)"
+      />
+      <img
+        src="./assets/squiggly.svg"
+        class="shape shape--6"
+        style="transform: translate(41.65px, 27.25px) rotate(416.5deg)"
+      />
+      <img
+        src="./assets/circle.svg"
+        class="shape shape--7"
+        style="transform: translate(-41.65px, -27.25px) rotate(-416.5deg)"
+      />
+      <img
+        src="./assets/semi circle.svg"
+        class="shape shape--8"
+        style="transform: translate(41.65px, 27.25px) rotate(416.5deg)"
+      />
     </section>
 
     <section id="projects"></section>
