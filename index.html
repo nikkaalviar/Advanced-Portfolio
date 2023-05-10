@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikka Alviar</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
+      })();
+    </script>
   </head>
   <body>
-    <section id="landing">
+    <section id="landing" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img
@@ -26,6 +29,7 @@
           <li class="nav__link">
             <a
               href="#"
+              onclick="toggleModal()"
               class="nav__link--anchor link__hover--effect link__hover--effect--black"
               >About</a
             >
@@ -40,6 +44,7 @@
           <li class="nav__link">
             <a
               href="#"
+              onclick="toggleModal()"
               class="nav__link--anchor link__hover--effect link__hover--effect--black"
               >Contact</a
             >
@@ -47,6 +52,7 @@
           <li class="nav__link">
             <a
               href="#"
+              onclick="toggleContrast()"
               class="nav__link--anchor link__hover--effect link__hover--effect--black"
             >
               <i class="fas fa-adjust" aria-hidden="true"></i>
@@ -63,7 +69,8 @@
             I'm a <b class="orange">Frontend Developer</b> with a strong passion
             for building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="orange click"></b> about me.
+            Here's a bit more
+            <b class="orange click" onclick="toggleModal()"> about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -91,7 +98,7 @@
         </div>
       </header>
       <a href="#">
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
           <i class="fas fa-envelope" aria-hidden="true"></i>
         </button>
       </a>
@@ -110,69 +117,74 @@
           <p class="modal__para">
             I have a Bachelor's Degree in Information Technolgy and has
             experience as a <b class="orange">Frontend Developer</b>
+            <br />
+            I enjoy solving difficult developer problems with
+            <b class="orange">React</b>, and
+            <b class="orange">TypeScript</b>
           </p>
-          <br />
-          I enjoy solving difficult developer problems with
-          <b class="orange">React</b>, and
-          <b class="orange">TypeScript</b>
-        </div>
-        <div class="modal__languages">
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="CSS Logo Image"
-            />
-            <span class="language__name">CSS</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-              alt="JavaScript Logo Image"
-            />
-            <span class="language__name">JavaScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-              alt="TypeScript Logo Image"
-            />
-            <span class="language__name">TypeScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-              alt="TypeScript Logo Image"
-            />
-            <span class="language__name">TypeScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-              alt="TypeScript Logo Image"
-            />
-            <span class="language__name">TypeScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-              alt="TypeScript Logo Image"
-            />
-            <span class="language__name">TypeScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img
-              class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-              alt="TypeScript Logo Image"
-            />
-            <span class="language__name">TypeScript</span>
-          </figure>
+
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="HTML5 Logo Image"
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="CSS Logo Image"
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="JavaScript Logo Image"
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                alt="TypeScript Logo Image"
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                  src="./assets/react-logo.png"
+                  class="modal__language--img"
+                  alt="React Logo Image"/>
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+                  class="modal__language--img"
+                  alt="Angular Logo Image"/>
+              <span class="language__name">Angular</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                  src="./assets/Java.png"
+                  class="modal__language--img"
+                  alt="Java logo"/>
+              <span class="language__name">Java</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                  class="modal__language--img"
+                  alt="PostgreSQL Logo Image"/>
+              <span class="language__name">PostgreSQL</span>
+            </figure>
+          </div>
         </div>
 
         <div class="modal__half modal__contact">
@@ -185,7 +197,7 @@
           <h3 class="modal__subtitle modal__subtitle--contact">
             I'm currently open to new opportunities
           </h3>
-          <form action="" id="contact__form">
+          <form action="" id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item" class="form__item--label">Name</label>
               <input type="text" class="input" name="user_name" required />
